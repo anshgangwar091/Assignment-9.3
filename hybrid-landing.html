@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hybrid Landing Page — Grid & Flexbox</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="hybrid-landing.css">
+</head>
+<body>
+
+    <!-- 1 & 5. Navigation Bar (Powered by Flexbox) -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">Dev<span class="highlight">Pulse</span></div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-action">
+                <a href="#get-started" class="btn-signin">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. Main Section Layout (Powered by CSS Grid) -->
+    <main class="main-grid-container">
+        
+        <!-- 2 & 5. Hero Section (Flexbox Side-by-Side & Alignment) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-text">
+                <h1>Combine Grid and Flexbox for Responsive Masterpiece Layouts</h1>
+                <p>Discover how leveraging CSS Grid for macro structural layouts and Flexbox for micro component alignment creates bulletproof responsive web applications.</p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <a href="#demo" class="btn btn-outline">Watch Demo</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Developer workspace setup" class="hero-img">
+            </div>
+        </section>
+
+        <!-- 3 & 4. Features Section (CSS Grid & Flexbox Cards) -->
+        <section id="features" class="features-section">
+            <div class="section-title">
+                <h2>Powerful Hybrid Architecture</h2>
+                <p>Everything you need to scale modern responsive layouts effortlessly.</p>
+            </div>
+
+            <!-- Grid Container for Cards -->
+            <div class="cards-grid">
+                
+                <!-- Card 1 (Flexbox Inner Alignment) -->
+                <article class="feature-card">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-content">
+                        <h3>Macro Grid Layouts</h3>
+                        <p>Control overarching page sections, sidebars, and multi-track templates with CSS Grid.</p>
+                    </div>
+                    <a href="#" class="card-link">Learn More &rarr;</a>
+                </article>
+
+                <!-- Card 2 (Flexbox Inner Alignment) -->
+                <article class="feature-card">
+                    <div class="card-icon">🧩</div>
+                    <div class="card-content">
+                        <h3>Micro Flexbox Components</h3>
+                        <p>Align icons, buttons, and navigation items smoothly using flexible box containers.</p>
+                    </div>
+                    <a href="#" class="card-link">Learn More &rarr;</a>
+                </article>
+
+                <!-- Card 3 (Flexbox Inner Alignment) -->
+                <article class="feature-card">
+                    <div class="card-icon">📱</div>
+                    <div class="card-content">
+                        <h3>Auto-Responsive Scaling</h3>
+                        <p>Combine auto-fit tracks and media queries to convert multi-column rows into single-column mobile views.</p>
+                    </div>
+                    <a href="#" class="card-link">Learn More &rarr;</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 DevPulse Hybrid Landing Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
